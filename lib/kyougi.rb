@@ -1,5 +1,7 @@
-require "kyougi/version"
+require 'thor'
 
 module Kyougi
-  # Your code goes here...
 end
+
+require 'kyougi/version'
+require 'kyougi/commands/generate'

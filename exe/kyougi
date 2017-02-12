@@ -1,3 +1,14 @@
 #!/usr/bin/env ruby
 
-require "kyougi"
+require 'kyougi'
+
+module Kyougi
+  class CLI < Thor
+    register Kyougi::Commands::Generate,
+      'generate',
+      'generate NAME',
+      'Generate Project'
+  end
+end
+
+Kyougi::CLI.start(ARGV)
